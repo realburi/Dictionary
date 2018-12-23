@@ -1,5 +1,6 @@
 import requests
 import json
+import pprint as pp
  
 app_id = 'c48794c7'
 
@@ -20,6 +21,6 @@ r = requests.get(url, headers = {'app_id' : app_id, 'app_key' : app_key})
 
 
 #print("code {}\n".format(r.status_code))
-print(r.text)
+pp.pprint(r.text)
 #print(requests.get(url, headers = {'app_id' : app_id, 'app_key' : app_key}))
 #print(data)
